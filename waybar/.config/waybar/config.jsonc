@@ -1,0 +1,85 @@
+{
+    "layer": "top",
+    "position": "top",
+    "margin-top": 8,
+    "margin-left": 12,
+    "margin-right": 12,
+    "margin-bottom": 0,
+    "spacing": 4,
+
+    "modules-left": [
+        "niri/workspaces",
+        "niri/window"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "backlight",
+        "pulseaudio",
+        "network",
+        "battery"
+    ],
+
+    "niri/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "󰮯",
+            "default": "󰊠",
+            "empty": "󰊠"
+        }
+    },
+
+    "niri/window": {
+        "max-length": 40,
+        "separate-outputs": true
+    },
+
+    "clock": {
+        "format": "  {:%H:%M}",
+        "format-alt": "  {:%A, %d %B %Y}",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "calendar": {
+            "mode": "month",
+            "on-scroll": 1
+        }
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰋙", "󰛩", "󰛨", "󰛧"]
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "scroll-step": 5
+    },
+
+    "network": {
+        "interface": "wlan0",
+        "format-wifi": "󰤨 {signalStrength}%",
+        "format-disconnected": "󰤭 disconnected",
+        "format-linked": "󰈀 {ifname}",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n{ipaddr}"
+    },
+
+    "battery": {
+        "bat": "BAT0",
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰚥 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "states": {
+            "warning": 30,
+            "critical": 15
+        }
+    }
+}
