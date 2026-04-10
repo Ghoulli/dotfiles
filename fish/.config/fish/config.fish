@@ -9,3 +9,7 @@ alias dotfiles='cd ~/dotfiles'
 
 # Clean greeting
 set fish_greeting ""
+
+# Qt dark mode
+set -gx QT_QPA_PLATFORMTHEME qt5ct
+set -gx QT_STYLE_OVERRIDE kvantum
