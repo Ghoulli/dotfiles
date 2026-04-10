@@ -1,0 +1,48 @@
+format = """
+[░▒▓](#a89984)\
+[  ](bg:#a89984 fg:#282828)\
+[](bg:#d79921 fg:#a89984)\
+$directory\
+[](fg:#d79921 bg:#504945)\
+$git_branch\
+$git_status\
+[](fg:#504945 bg:#3c3836)\
+$nodejs\
+$rust\
+$golang\
+$php\
+[](fg:#3c3836 bg:#282828)\
+$time\
+[ ](fg:#282828)\
+\n$character"""
+
+[directory]
+style = "fg:#282828 bg:#d79921"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+
+[git_branch]
+symbol = ""
+style = "bg:#504945"
+format = '[[ $symbol $branch ](fg:#fabd2f bg:#504945)]($style)'
+
+[git_status]
+style = "bg:#504945"
+format = '[[($all_status$ahead_behind )](fg:#fabd2f bg:#504945)]($style)'
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:#3c3836"
+format = '[[  $time ](fg:#a89984 bg:#3c3836)]($style)'
+
+[character]
+success_symbol = "[❯](bold #b8bb26)"
+error_symbol = "[❯](bold #fb4934)"
