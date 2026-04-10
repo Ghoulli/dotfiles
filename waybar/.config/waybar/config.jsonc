@@ -86,7 +86,8 @@
         "format-wifi": "󰤨 {signalStrength}%",
         "format-disconnected": "󰤭 disconnected",
         "format-linked": "󰈀 {ifname}",
-        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n{ipaddr}"
+        "tooltip-format-wifi": "{essid} ({signalStrength}%)\n{ipaddr}",
+	"on-click": "alacritty -e nmtui"
     },
 
     "battery": {
