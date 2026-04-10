@@ -247,10 +247,10 @@ dotfiles/
 
 ## Notes
 
-- Alacritty is configured to launch Fish directly — Bash remains the system shell
+- Alacritty is configured to launch Fish directly Bash remains the system shell
 - Waybar wifi module opens `nmtui` in Alacritty on click for network switching
 - The mpris module in Waybar picks up any MPRIS-compatible player automatically (Spotify, Firefox, etc.)
-- greetd replaces LightDM — if something goes wrong at login, switch to TTY2 with `Ctrl+Alt+F2` and re-enable LightDM:
+- greetd replaces LightDM if something goes wrong at login, switch to TTY2 with `Ctrl+Alt+F2` and re-enable LightDM:
 
 ```bash
 sudo systemctl disable greetd
