@@ -1,0 +1,40 @@
+# Behaviour
+default-timeout=5000
+ignore-timeout=0
+max-visible=5
+
+# Layout
+width=340
+height=110
+margin=12
+padding=12
+border-size=2
+border-radius=8
+icons=1
+icon-path=/usr/share/icons/hicolor
+max-icon-size=48
+
+# Position — top right
+anchor=top-right
+
+# Gruvbox Dark
+background-color=#282828ee
+text-color=#ebdbb2
+border-color=#d79921
+progress-color=#504945
+
+# Font
+font=JetBrainsMono Nerd Font 12
+
+# Urgency overrides
+[urgency=low]
+border-color=#504945
+default-timeout=3000
+
+[urgency=normal]
+border-color=#d79921
+
+[urgency=high]
+border-color=#fb4934
+text-color=#fb4934
+default-timeout=0
