@@ -2,5 +2,5 @@
 vt = 1
 
 [default_session]
-command = "tuigreet --time --time-format '%H:%M' --greeting 'Welcome back, Ghoulli' --cmd niri --theme 'border=fabd2f;text=ebdbb2;prompt=d79921;action=83a598;button=504945;container=282828;input=3c3836' --width 60 --asterisks --remember --remember-session"
+command = "tuigreet --time --time-format '%H:%M' --greeting 'Welcome back, Ghoulli' --cmd niri --theme 'border=#fabd2f;text=#ebdbb2;prompt=#d79921;action=#83a598;button=#504945;container=#282828;input=#3c3836' --width 60 --asterisks --remember --remember-session"
 user = "greeter"
