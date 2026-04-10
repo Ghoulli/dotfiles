@@ -40,6 +40,20 @@ window#waybar > box {
     border-radius: 8px;
 }
 
+#mpris {
+    color: #8ec07c;
+    padding: 0 8px;
+    font-style: italic;
+}
+
+#mpris.paused {
+    color: #928374;
+}
+
+#mpris.stopped {
+    color: transparent;
+}
+
 /* Window title */
 #window {
     color: #a89984;

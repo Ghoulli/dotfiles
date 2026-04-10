@@ -14,6 +14,7 @@
     ],
 
     "modules-center": [
+	"mpris",
         "niri/window"
     ],
 
@@ -36,6 +37,22 @@
     "niri/window": {
         "max-length": 40,
         "separate-outputs": true
+    },
+
+    "mpris": {    
+        "format": "{player_icon} {artist} — {title}",
+        "format-paused": "{status_icon} {artist} — {title}",
+        "player-icons": {
+            "default": "▶",
+            "spotify": "",
+            "firefox": "󰈹",
+            "chromium": ""
+        },
+        "status-icons": {
+            "paused": "⏸"
+        },
+        "max-length": 20,
+        "interval": 1
     },
 
     "clock": {
