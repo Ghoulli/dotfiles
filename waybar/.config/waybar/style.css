@@ -18,6 +18,10 @@ window#waybar {
     padding: 4px 8px;
 }
 
+window#waybar > box {
+    padding: 0;
+}
+
 /* Workspaces */
 #workspaces button {
     color: #a89984;
@@ -40,6 +44,7 @@ window#waybar {
 #window {
     color: #a89984;
     padding: 0 8px;
+    font-style: italic;
 }
 
 /* Clock */

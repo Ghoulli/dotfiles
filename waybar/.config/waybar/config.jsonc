@@ -1,6 +1,7 @@
 {
     "layer": "top",
     "position": "top",
+    "fixed-center": true,
     "margin-top": 8,
     "margin-left": 12,
     "margin-right": 12,
@@ -9,11 +10,11 @@
 
     "modules-left": [
         "niri/workspaces",
-        "niri/window"
+        "clock"
     ],
 
     "modules-center": [
-        "clock"
+        "niri/window"
     ],
 
     "modules-right": [
